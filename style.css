@@ -2,3 +2,26 @@
     width: 100%;
     margin-top: 8px;
 }
+
+.current-forecast {
+    list-style: none;
+}
+
+.card {
+    background-color: rgba(2, 2, 2, 0.836);
+    color: #fff;
+}
+
+.main-container {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.jumbotron {
+    background-color: rgba(10, 10, 10, 0.877);
+    color: #fff;
+}
+
+.card-text {
+    font-size: smaller;
+}

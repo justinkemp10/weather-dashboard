@@ -19,7 +19,7 @@
     <!-- Create a div container for weather dashboard -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-3 bg-light">
+        <div class="col-lg-2 bg-light">
           <h5 class="mt-2">Search for a City:</h5>
           <div>
             <input
@@ -44,65 +44,78 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-9">
-          <div class="row jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
-            <hr class="my-4" />
-            <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
-            </p>
-            <a class="btn btn-primary btn-lg" href="#" role="button"
-              >Learn more</a
-            >
+        <div class="col-lg-10 main-container">
+          <div class="jumbotron">
+            <div class="row">
+                <div><h1 class="display-4" id="currentCity">Current City</h1></div>
+                <div class="p-3"><h4 id="currentDate">12/25/2021</h4></div>
+                <div class="current-weather-icon"><img id="icon" src="" alt="weather icon"></div>
+            </div>
+                <div class="weather-container">  
+                    <ul class="current-forecast">
+                        <li id="temp">Temp</li>
+                        <li id="windSpeed">Wind Speed</li>
+                        <li id="humidity">Humidity</li>
+                        <li id="uvIndex">UV Index</li>
+                    </ul>
+                </div>
+          </div>
+          <div>
+              <h3>5-Day Forecast</h3>
           </div>
           <div class="row">
               <div class="col-lg-2">
                 <div class="card" style="width: 10rem;">
                     <div class="card-body">
-                      <h5 class="card-title">09/01/2021</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title day-one">09/01/2021</h5>
+                    <div class="current-weather-icon-day-one"><img id="iconDayOne" src="" alt="weather icon day 1"></div>
+                    <p class="card-text" id="tempDayOne">Temp</p>
+                    <p class="card-text" id="windDayOne">Wind</p>
+                    <p class="card-text" id="humidityDayOne">Humidity</p>
                     </div>
-                  </div>
-              </div>
-              <div class="col-lg-2">
+                </div>
+            </div>
+            <div class="col-lg-2">
                 <div class="card" style="width: 10rem;">
                     <div class="card-body">
-                      <h5 class="card-title">09/02/2021</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title day-two">09/02/2021</h5>
+                    <div class="current-weather-icon-day-two"><img id="iconDayTwo" src="" alt="weather icon day 2"></div>
+                    <p class="card-text" id="tempDayTwo">Temp</p>
+                    <p class="card-text" id="windDayTwo">Wind</p>
+                    <p class="card-text" id="humidityDayTwo">Humidity</p>
                     </div>
-                  </div>
-              </div>
-              <div class="col-lg-2">
+                </div>
+            </div>
+            <div class="col-lg-2">
                 <div class="card" style="width: 10rem;">
                     <div class="card-body">
-                      <h5 class="card-title">09/03/2021</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title day-three">09/03/2021</h5>
+                    <div class="current-weather-icon-day-three"><img id="iconDayThree" src="" alt="weather icon day 3"></div>
+                    <p class="card-text" id="tempDayThree">Temp</p>
+                    <p class="card-text" id="windDayThree">Wind</p>
+                    <p class="card-text" id="humidityDayThree">Humidity</p>
                     </div>
-                  </div>
-              </div>
-              <div class="col-lg-2">
+                </div>
+            </div>
+            <div class="col-lg-2">
                 <div class="card" style="width: 10rem;">
                     <div class="card-body">
-                      <h5 class="card-title">09/04/2021</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title day-four">09/04/2021</h5>
+                    <div class="current-weather-icon-day-four"><img id="iconDayFour" src="" alt="weather icon day 4"></div>
+                    <p class="card-text" id="tempDayFour">Temp</p>
+                    <p class="card-text" id="windDayFour">Wind</p>
+                    <p class="card-text" id="humidityDayFour">Humidity</p>
                     </div>
-                  </div>
-              </div>
-              <div class="col-lg-2">
+                </div>
+            </div>
+            <div class="col-lg-2">
                 <div class="card" style="width: 10rem;">
                     <div class="card-body">
-                      <h5 class="card-title">09/05/2021</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title day-five">09/05/2021</h5>
+                    <div class="current-weather-icon-day-five"><img id="iconDayFive" src="" alt="weather icon day 5"></div>
+                    <p class="card-text" id="tempDayFive">Temp</p>
+                    <p class="card-text" id="windDayFive">Wind</p>
+                    <p class="card-text" id="humidityDayFive">Humidity</p>
                     </div>
                   </div>
               </div>
