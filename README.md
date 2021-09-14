@@ -2,7 +2,7 @@
 
 ## The Task
 
-Build a weather dashbaord using third-party APIs, specifically the OpenWeather One Call API. The dashboard app should run in the browser and feature dynamically updated HTML & CSS. Use localStorage to store persistent data and display the recent searches.
+Build a weather dashboard using third-party APIs, specifically the OpenWeather One Call API. The dashboard app should run in the browser and feature dynamically updated HTML & CSS. Use localStorage to store persistent data and display the recent searches.
 
 ## Acceptance Criteria
 
