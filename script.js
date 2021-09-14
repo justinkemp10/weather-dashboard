@@ -82,7 +82,7 @@ function newRecSearch(event) {
   console.log('test');
   // use OpenWeather current API to get the latitude & longitude of the city
   var apiUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     recCityName +
     "&appid=" +
     API_KEY +
@@ -99,7 +99,7 @@ function newRecSearch(event) {
       lat = res.coord.lat;
       lon = res.coord.lon;
       console.log(res);
-      var apiUrl = "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+      var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" +
         lat +
         "&lon=" +
         lon +
@@ -130,7 +130,7 @@ function newRecSearch(event) {
           document.querySelector("#tempDay" + (i+1)).innerHTML = 'Temp: ' + tempVal + '&#8457';
           document.querySelector("#windDay" + (i+1)).innerHTML = 'Wind Speed: ' + windVal;
           document.querySelector("#humidityDay" + (i+1)).innerHTML = 'Humidity: ' + humidVal + '%';;
-          document.querySelector('#iconDay' + (i+1)).src = "http://openweathermap.org/img/wn/" + apiIcon + "@2x.png";
+          document.querySelector('#iconDay' + (i+1)).src = "https://openweathermap.org/img/wn/" + apiIcon + "@2x.png";
           document.querySelector('#day' + (i+1)).innerHTML = dateVal;
         }
         if (uviValue < 5) {
@@ -150,7 +150,7 @@ function newRecSearch(event) {
         windSpeed.innerHTML = 'Wind Speed: ' + windValue;
         humidity.innerHTML = 'Humidity: ' + humidityValue + '%';
         uvIndex.innerHTML = 'UV Index: ' + uviValue;
-        document.querySelector('#icon').src = "http://openweathermap.org/img/wn/" + apiIconCurrent + "@2x.png";
+        document.querySelector('#icon').src = "https://openweathermap.org/img/wn/" + apiIconCurrent + "@2x.png";
     })  
     });
 }
@@ -165,7 +165,7 @@ function getLatLon() {
 
   // use OpenWeather current API to get the latitude & longitude of the city
   var apiUrl =
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
     "&appid=" +
     API_KEY +
@@ -189,7 +189,7 @@ function getLatLon() {
 function getWeatherData(lat, lon) {
   // console.log (lat, lon)
 
-  var apiUrl = "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+  var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" +
   lat +
   "&lon=" +
   lon +
@@ -220,7 +220,7 @@ function getWeatherData(lat, lon) {
           document.querySelector("#tempDay" + (i+1)).innerHTML = 'Temp: ' + tempVal + '&#8457';
           document.querySelector("#windDay" + (i+1)).innerHTML = 'Wind Speed: ' + windVal;
           document.querySelector("#humidityDay" + (i+1)).innerHTML = 'Humidity: ' + humidVal + '%';;
-          document.querySelector('#iconDay' + (i+1)).src = "http://openweathermap.org/img/wn/" + apiIcon + "@2x.png";
+          document.querySelector('#iconDay' + (i+1)).src = "https://openweathermap.org/img/wn/" + apiIcon + "@2x.png";
           document.querySelector('#day' + (i+1)).innerHTML = dateVal;
         }
         if (uviValue < 5) {
@@ -240,7 +240,7 @@ function getWeatherData(lat, lon) {
         windSpeed.innerHTML = 'Wind Speed: ' + windValue;
         humidity.innerHTML = 'Humidity: ' + humidityValue + '%';
         uvIndex.innerHTML = 'UV Index: ' + uviValue;
-        document.querySelector('#icon').src = "http://openweathermap.org/img/wn/" + apiIconCurrent + "@2x.png";
+        document.querySelector('#icon').src = "https://openweathermap.org/img/wn/" + apiIconCurrent + "@2x.png";
     })
     // recentSearchHistory();
   // use OpenWeather One Call API and pass the latitude & longitude to get the current weather
