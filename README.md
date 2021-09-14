@@ -16,6 +16,6 @@ Build a weather dashboard using third-party APIs, specifically the OpenWeather O
 ## Mock-Up
 
 The following images displays the applications appearance and functionality:
-![weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for the city of your choosing.](./Assets/06-server-side-apis-homework-demo.png)
+![weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for the city of your choosing.](./Assets/weather-dashboard.gif)
 
 Here is a link to the deployed application: [Weather Dashboard](https://justinkemp10.github.io/weather-dashboard/)
